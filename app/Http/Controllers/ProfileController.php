@@ -62,11 +62,13 @@ class ProfileController extends Controller
 
         if ($request->hasFile('profile_picture')) {
             $path = $request->file('profile_picture')->store('profile_pictures', 'public');
+
             $user->profile_picture = 'storage/' . $path;
             $user->save();
         }
 
-        return response()->json(['success' => true, 'message' => 'Foto profil berhasil diperbarui']);
+        return response()->json(['success' => true]);
     }
+
 
 }

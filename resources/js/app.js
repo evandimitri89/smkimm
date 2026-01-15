@@ -154,12 +154,11 @@ window.handleProfilePictureChange = function (event) {
 
     const allowed = ["image/jpeg", "image/jpg", "image/png"];
     if (!allowed.includes(file.type)) {
-        alert(
-            "Format file tidak didukung. Hanya JPG, JPEG, dan PNG yang diperbolehkan."
-        );
+        alert("Format file tidak didukung. Hanya JPG dan PNG.");
         return;
     }
 
+    // Preview langsung ganti
     const reader = new FileReader();
     reader.onload = (e) => {
         document.getElementById("profile_image").src = e.target.result;
@@ -181,15 +180,12 @@ window.handleProfilePictureChange = function (event) {
     })
         .then((response) => response.json())
         .then((data) => {
-            console.log("Response:", data);
             if (data.success) {
-                document.getElementById("profile_image").src =
-                    URL.createObjectURL(file);
+                console.log("Foto profil berhasil diperbarui");
             } else {
-                alert("❌ Gagal mengupload foto.");
+                alert("Gagal mengupload foto.");
             }
         })
-
         .catch((err) => {
             console.error("Upload error:", err);
             alert("Terjadi kesalahan saat upload foto.");

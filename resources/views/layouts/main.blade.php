@@ -11,6 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 
 <body class="font-[Montserrat,sans-serif] min-h-screen flex flex-col">

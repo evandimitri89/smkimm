@@ -4,83 +4,149 @@
 
 @section('content')
 
-  <div class="container-fluid py-4">
-    <h1 class="mb-4">Edit Profile</h1>
+  <div class="max-w-5xl mx-auto py-10 px-4">
 
-    <div class="card shadow-sm p-4">
-      {{-- Form untuk Update Data. Menggunakan metode POST dengan spoofing PUT --}}
-      <form action="{{ route('profile.update') }}" method="POST">
-        @csrf
-        @method('PUT')
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+        Edit Profile
+      </h1>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
-                value="{{ old('name', $user->name) }}" required>
+      <a href="{{ route('profile') }}"
+        class="inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition">
+        <i class="bi bi-arrow-left mr-2"></i>
+        Back
+      </a>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+
+      <div class="bg-[#1D7BC5] text-white px-6 py-4">
+        <h2 class="text-lg font-semibold flex items-center">
+          <i class="bi bi-person-gear mr-2"></i>
+          Update Your Profile Information
+        </h2>
+      </div>
+
+      <div class="p-6 md:p-8">
+
+        <form action="{{ route('profile.update') }}" method="POST">
+          @csrf
+          @method('PUT')
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {{-- Name --}}
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Name
+              </label>
+
+              <input type="text" name="name" value="{{ old('name', $user->name) }}"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('name') border-red-500 @enderror"
+                required>
+
               @error('name')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                name="email" value="{{ old('email', $user->email) }}" required>
+            {{-- Email --}}
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Email
+              </label>
+
+              <input type="email" name="email" value="{{ old('email', $user->email) }}"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('email') border-red-500 @enderror"
+                required>
+
               @error('email')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
 
-            <div class="mb-3">
-              <label for="gender" class="form-label">Gender</label>
-              <select class="form-select @error('gender') is-invalid @enderror" id="gender" name="gender">
-                <option value="">Pilih Gender</option>
+            {{-- Gender --}}
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Gender
+              </label>
+
+              <select name="gender"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('gender') border-red-500 @enderror">
+                <option value="">Select Gender</option>
                 <option value="male" {{ old('gender', $user->gender) == 'male' ? 'selected' : '' }}>Laki-laki</option>
                 <option value="female" {{ old('gender', $user->gender) == 'female' ? 'selected' : '' }}>Perempuan</option>
               </select>
+
               @error('gender')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label for="birth_place" class="form-label">Place of Birth</label>
-              <input type="text" class="form-control @error('birth_place') is-invalid @enderror" id="birth_place"
-                name="birth_place" value="{{ old('birth_place', $user->birth_place) }}">
+            {{-- Birth Place --}}
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Place of Birth
+              </label>
+
+              <input type="text" name="birth_place" value="{{ old('birth_place', $user->birth_place) }}"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('birth_place') border-red-500 @enderror">
+
               @error('birth_place')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
 
-            <div class="mb-3">
-              <label for="birth_date" class="form-label">Date of Birth</label>
-              <input type="date" class="form-control @error('birth_date') is-invalid @enderror" id="birth_date"
-                name="birth_date" value="{{ old('birth_date', $user->birth_date) }}">
+            {{-- Birth Date --}}
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Date of Birth
+              </label>
+
+              <input type="date" name="birth_date" value="{{ old('birth_date', $user->birth_date) }}"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('birth_date') border-red-500 @enderror">
+
               @error('birth_date')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
 
-            <div class="mb-3">
-              <label for="address" class="form-label">Address</label>
-              <textarea class="form-control @error('address') is-invalid @enderror" id="address" name="address" rows="3">{{ old('address', $user->address) }}</textarea>
+            {{-- Address --}}
+            <div class="md:col-span-2">
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Address
+              </label>
+
+              <textarea name="address" rows="3"
+                class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none @error('address') border-red-500 @enderror">{{ old('address', $user->address) }}</textarea>
+
               @error('address')
-                <div class="invalid-feedback">{{ $message }}</div>
+                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
               @enderror
             </div>
-          </div>
-        </div>
 
-        <div class="text-end mt-4">
-          <a href="{{ route('profile') }}" class="btn btn-secondary me-2">Cancel</a>
-          <button type="submit" class="btn btn-primary">Save Changes</button>
-        </div>
-      </form>
+          </div>
+
+          {{-- Action Buttons --}}
+          <div class="flex justify-end space-x-3 mt-8 border-t pt-5">
+
+            <a href="{{ route('profile') }}"
+              class="px-5 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg transition">
+              Cancel
+            </a>
+
+            <button type="submit"
+              class="px-6 py-2 bg-[#1D7BC5] hover:bg-blue-700 text-white font-semibold rounded-lg transition">
+              Save Changes
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
     </div>
+
   </div>
 
 @endsection

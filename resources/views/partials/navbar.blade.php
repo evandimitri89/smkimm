@@ -38,11 +38,25 @@
           class="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-blue-100 transition">Login</a>
       @endguest
       @auth
+        @php
+          $navProfilePicture =
+              Auth::user()->profile_picture && file_exists(public_path(Auth::user()->profile_picture))
+                  ? Auth::user()->profile_picture
+                  : null;
+        @endphp
+
         <div class="relative group">
           <button
-            class="flex items-center justify-center bg-white text-blue-600 rounded-full w-9 h-9 hover:bg-blue-100 transition">
-            <i class="bi bi-person-fill text-lg"></i>
+            class="flex items-center justify-center bg-white text-blue-600 rounded-full w-9 h-9 hover:bg-blue-100 transition overflow-hidden">
+
+            @if ($navProfilePicture)
+              <img src="{{ asset($navProfilePicture) }}" alt="User Photo" class="w-full h-full object-cover">
+            @else
+              <i class="bi bi-person-fill text-lg"></i>
+            @endif
+
           </button>
+
           <div
             class="absolute right-0 hidden group-hover:block bg-white text-black rounded-lg shadow-lg mt-2 w-40 overflow-hidden">
             <a href="{{ route('profile') }}" class="block px-4 py-2 hover:bg-gray-100">Profile</a>
