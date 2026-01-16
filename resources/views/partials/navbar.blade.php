@@ -15,9 +15,13 @@
       <div class="relative group">
         <button class="hover:underline inline-flex items-center">Profile</button>
         <div class="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-lg mt-2 w-44">
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Vision & Mission</a>
+          <a href="{{ route('vision.mission') }}" class="block px-4 py-2 hover:bg-gray-100">
+            Vision & Mission
+          </a>
           <a href="#" class="block px-4 py-2 hover:bg-gray-100">Teachers & Staff</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Facility</a>
+          <a href="{{ route('facility') }}" class="block px-4 py-2 hover:bg-gray-100">
+            Facility
+          </a>
         </div>
       </div>
       <a href="#" class="hover:underline">Majors</a>
@@ -88,9 +92,9 @@
         <i class="bi bi-chevron-down"></i>
       </button>
       <div class="mobile-submenu hidden flex flex-col mt-2 space-y-2 text-base text-center">
-        <a href="#" class="hover:underline">Vision & Mission</a>
+        <a href="{{ route('vision.mission') }}" class="hover:underline">Vision & Mission</a>
         <a href="#" class="hover:underline">Teachers & Staff</a>
-        <a href="#" class="hover:underline">Facility</a>
+        <a href="{{ route('facility') }}" class="hover:underline">Facility</a>
       </div>
     </div>
 

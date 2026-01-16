@@ -21,6 +21,15 @@ Route::middleware('auth')->group(function () {
         return view('home');
     })->name('home');
 
+    Route::get('/vision-mission', function () {
+        return view('pages.vision-mission');
+    })->name('vision.mission');
+
+    Route::get('/facility', function () {
+        return view('pages.facility');
+    })->name('facility');
+
+
     Route::get('/profiles', [ProfileController::class, 'showProfile'])->name('profile');
     Route::get('/profiles/edit', [ProfileController::class, 'editProfile'])->name('profile.edit');
     Route::put('/profiles', [ProfileController::class, 'updateProfile'])->name('profile.update');
