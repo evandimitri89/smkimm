@@ -37,7 +37,9 @@ class User extends Authenticatable
         'birth_date',
         'birth_place',
         'address',
-        'profile_picture'
+        'profile_picture',
+        'role_id',
+        'password'
     ];
 
 

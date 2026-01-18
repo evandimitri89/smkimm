@@ -54,7 +54,7 @@ class AuthController extends Controller
     {
         Auth::logout();
 
-        // ✅ Hapus cookie remember_me juga
+        // Hapus cookie
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
@@ -88,6 +88,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'role_id' => 1,
+            'profile_picture' => 'images/profile/default.jpeg',
         ]);
 
         return redirect('/login')->with('success', 'Akun berhasil dibuat, silakan login.');

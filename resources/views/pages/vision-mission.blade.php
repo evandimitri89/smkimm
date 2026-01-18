@@ -13,7 +13,7 @@
       {{-- Vision Section --}}
       <div>
         <div class="flex justify-center">
-          <img src="{{ asset('images/Visi.png') }}" alt="Vision" class="rounded-lg shadow-lg max-w-full h-auto"
+          <img src="{{ asset('images/vimi/Visi.png') }}" alt="Vision" class="rounded-lg shadow-lg max-w-full h-auto"
             draggable="false">
         </div>
       </div>
@@ -21,7 +21,7 @@
       {{-- Mission Section --}}
       <div>
         <div class="flex justify-center">
-          <img src="{{ asset('images/Misi.png') }}" alt="Mission" class="rounded-lg shadow-lg max-w-full h-auto"
+          <img src="{{ asset('images/vimi/Misi.png') }}" alt="Mission" class="rounded-lg shadow-lg max-w-full h-auto"
             draggable="false">
         </div>
       </div>
