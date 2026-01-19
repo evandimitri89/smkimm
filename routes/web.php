@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TeacherController;
 
 Route::get('/', function () {
     return view('home');
@@ -29,7 +30,12 @@ Route::middleware('auth')->group(function () {
         return view('pages.facility');
     })->name('facility');
 
+    Route::get('/teachers', function () {
+        return view('pages.teachers');
+    })->name('teachers');
 
+
+    Route::get('/teachers', [TeacherController::class, 'index'])->name('teachers');
     Route::get('/profiles', [ProfileController::class, 'showProfile'])->name('profile');
     Route::get('/profiles/edit', [ProfileController::class, 'editProfile'])->name('profile.edit');
     Route::put('/profiles', [ProfileController::class, 'updateProfile'])->name('profile.update');

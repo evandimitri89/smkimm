@@ -22,7 +22,7 @@
     <div class="w-full lg:w-1/2 px-12 py-16 flex flex-col justify-center">
 
       <div class="mb-10">
-        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-10 mr-auto">
+        <img src="{{ asset('images/homepage/logo.png') }}" alt="Logo" class="h-10 mr-auto">
       </div>
 
       <h1 class="text-3xl font-bold mb-2 text-gray-800">Back in class, back on track</h1>

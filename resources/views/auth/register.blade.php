@@ -18,7 +18,7 @@
   <div class="flex flex-row-reverse w-screen h-screen bg-white overflow-hidden">
     <div class="w-full lg:w-1/2 px-12 py-16 flex flex-col justify-center">
       <div class="flex justify-between items-center mb-10">
-        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-10">
+        <img src="{{ asset('images/homepage/logo.png') }}" alt="Logo" class="h-10">
         <p class="text-sm text-gray-600">
           Already have an account? <a href="{{ route('login') }}"
             class="text-blue-600 font-semibold hover:text-blue-500">Log in now</a>

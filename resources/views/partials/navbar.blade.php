@@ -1,7 +1,7 @@
 <nav class="bg-[#1D7BC5] text-white w-full shadow-md fixed top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
     <div class="flex items-center space-x-3">
-      <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-10 w-10 object-contain">
+      <img src="{{ asset('images/homepage/logo.png') }}" alt="Logo" class="h-10 w-10 object-contain">
       <div class="leading-tight">
         <h1 class="font-[Commissioner,sans-serif] font-bold text-sm sm:text-base tracking-tight">SMK KRISTEN IMMANUEL
         </h1>
@@ -18,7 +18,7 @@
           <a href="{{ route('vision.mission') }}" class="block px-4 py-2 hover:bg-gray-100">
             Vision & Mission
           </a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Teachers & Staff</a>
+          <a href="{{ route('teachers') }}" class="block px-4 py-2 hover:bg-gray-100">Teachers & Staff</a>
           <a href="{{ route('facility') }}" class="block px-4 py-2 hover:bg-gray-100">
             Facility
           </a>
@@ -93,7 +93,7 @@
       </button>
       <div class="mobile-submenu hidden flex flex-col mt-2 space-y-2 text-base text-center">
         <a href="{{ route('vision.mission') }}" class="hover:underline">Vision & Mission</a>
-        <a href="#" class="hover:underline">Teachers & Staff</a>
+        <a href="{{ route('teachers') }}" class="hover:underline">Teachers & Staff</a>
         <a href="{{ route('facility') }}" class="hover:underline">Facility</a>
       </div>
     </div>
