@@ -34,6 +34,11 @@ Route::middleware('auth')->group(function () {
         return view('pages.teachers');
     })->name('teachers');
 
+    Route::get('/detail-steacher', function () {
+        return view('pages.detail-teacher');
+    })->name('detail-teacher');
+
+
 
     Route::get('/teachers', [TeacherController::class, 'index'])->name('teachers');
     Route::get('/profiles', [ProfileController::class, 'showProfile'])->name('profile');
