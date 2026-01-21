@@ -93,7 +93,7 @@
     </div>
 
     <div class="hidden lg:block w-1/2 relative rounded-r-[100px] overflow-hidden">
-      <img src="{{ asset('images/smk.jpg') }}" alt="School Building"
+      <img src="{{ asset('images/homepage/smk.jpg') }}" alt="School Building"
         class="absolute inset-0 w-full h-full object-cover">
     </div>
   </div>

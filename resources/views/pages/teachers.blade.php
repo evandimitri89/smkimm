@@ -13,40 +13,42 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
       @foreach ($teachers as $teacher)
-        <div class="relative overflow-hidden rounded-lg">
+        <a href="{{ route('teachers.show', $teacher->id) }}" class="block">
+          <div class="relative overflow-hidden rounded-lg">
 
-          {{-- FOTO FULL --}}
-          <div class="w-full h-[340px]">
-            <img src="{{ asset('images/teachers/' . $teacher->photo) }}" class="w-full h-full object-cover"
-              draggable="false">
-          </div>
+            {{-- FOTO FULL --}}
+            <div class="w-full h-[340px]">
+              <img src="{{ asset('images/teachers/' . $teacher->photo) }}" class="w-full h-full object-cover"
+                draggable="false">
+            </div>
 
-          {{-- GRADIENT BAWAH --}}
-          <div
-            class="absolute bottom-0 left-0 w-full h-[140px]
+            {{-- GRADIENT BAWAH --}}
+            <div
+              class="absolute bottom-0 left-0 w-full h-[140px]
                         bg-gradient-to-t from-black/90 via-black/60 to-transparent">
-          </div>
+            </div>
 
-          {{-- TEXT INFO --}}
-          <div class="absolute bottom-0 left-0 p-4 text-white w-full">
+            {{-- TEXT INFO --}}
+            <div class="absolute bottom-0 left-0 p-4 text-white w-full">
 
-            <h2 class="text-base font-semibold leading-tight">
-              {{ $teacher->name }}
-            </h2>
+              <h2 class="text-base font-semibold leading-tight">
+                {{ $teacher->name }}
+              </h2>
 
-            <p class="text-sm text-gray-200 mt-1">
-              {{ $teacher->position }}
-            </p>
-
-            @if ($teacher->subject)
-              <p class="text-xs text-gray-300 mt-1">
-                {{ $teacher->subject }}
+              <p class="text-sm text-gray-200 mt-1">
+                {{ $teacher->position }}
               </p>
-            @endif
+
+              @if ($teacher->subject)
+                <p class="text-xs text-gray-300 mt-1">
+                  {{ $teacher->subject }}
+                </p>
+              @endif
+
+            </div>
 
           </div>
-
-        </div>
+        </a>
       @endforeach
 
     </div>
