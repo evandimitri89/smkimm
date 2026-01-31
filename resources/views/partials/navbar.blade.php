@@ -24,14 +24,13 @@
           </a>
         </div>
       </div>
-      <a href="#" class="hover:underline">Majors</a>
+      <a href="{{ route('majors') }}" class="hover:underline">Majors</a>
       <div class="relative group">
         <button class="hover:underline inline-flex items-center">Student Life</button>
         <div class="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-lg mt-2 w-44">
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Activities</a>
+          <a href="{{ route('activities') }}" class="block px-4 py-2 hover:bg-gray-100">Activities</a>
           <a href="#" class="block px-4 py-2 hover:bg-gray-100">Achievements</a>
           <a href="#" class="block px-4 py-2 hover:bg-gray-100">Extracurriculars</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Academic Calendar</a>
         </div>
       </div>
     </div>
@@ -98,7 +97,7 @@
       </div>
     </div>
 
-    <a href="#" class="hover:underline text-center w-full">Majors</a>
+    <a href="{{ route('majors') }}" class="hover:underline text-center w-full">Majors</a>
 
     <div class="text-center w-full">
       <button class="mobile-submenu-btn flex items-center justify-center space-x-2 w-full">
@@ -106,10 +105,9 @@
         <i class="bi bi-chevron-down"></i>
       </button>
       <div class="mobile-submenu hidden flex flex-col mt-2 space-y-2 text-base text-center">
-        <a href="#" class="hover:underline">Activities</a>
+        <a href="{{ route('activities') }}" class="hover:underline">Activities</a>
         <a href="#" class="hover:underline">Achievements</a>
         <a href="#" class="hover:underline">Extracurriculars</a>
-        <a href="#" class="hover:underline">Academic Calendar</a>
       </div>
     </div>
 

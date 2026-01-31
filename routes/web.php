@@ -30,6 +30,14 @@ Route::middleware('auth')->group(function () {
         return view('pages.facility');
     })->name('facility');
 
+    Route::get('/majors', function () {
+        return view('pages.majors');
+    })->name('majors');
+
+    Route::get('/activities', function () {
+        return view('pages.activities');
+    })->name('activities');
+
     Route::get('/teachers', [TeacherController::class, 'index'])
         ->name('teachers.index');
 
