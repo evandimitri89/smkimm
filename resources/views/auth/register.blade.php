@@ -67,19 +67,6 @@
           </div>
         </div>
 
-
-        <div class="mb-8">
-          <div class="flex items-start">
-            <input id="terms" name="terms" type="checkbox" required
-              class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1">
-            <label for="terms" class="ml-2 block text-sm text-gray-900 leading-tight">
-              I agree to the <a href="#" class="text-blue-600 font-medium hover:text-blue-500">Terms of
-                Service</a> and <a href="#" class="text-blue-600 font-medium hover:text-blue-500">Privacy
-                Policy</a>
-            </label>
-          </div>
-        </div>
-
         <button type="submit"
           class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-150 ease-in-out">
           Register

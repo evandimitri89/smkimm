@@ -38,6 +38,10 @@ Route::middleware('auth')->group(function () {
         return view('pages.activities');
     })->name('activities');
 
+    Route::get('/achievements', function () {
+        return view('pages.achievements');
+    })->name('achievements');
+
     Route::get('/teachers', [TeacherController::class, 'index'])
         ->name('teachers.index');
 
