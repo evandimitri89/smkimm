@@ -188,7 +188,7 @@
       <div id="carouselContainer" class="overflow-hidden cursor-grab active:cursor-grabbing">
         <div id="carouselTrack" class="flex gap-4 w-max transition-transform duration-300 ease-out">
           <div class="flex-shrink-0 w-[300px] md:w-[400px] rounded-2xl overflow-hidden shadow-lg">
-            <img src="{{ asset('images/homepage/aksos.jpg') }}"
+            <img src="{{ asset('images/homepage/mtc.jpg') }}"
               class="w-full h-[250px] object-cover select-none pointer-events-none" alt="" draggable="false">
           </div>
           <div class="flex-shrink-0 w-[300px] md:w-[400px] rounded-2xl overflow-hidden shadow-lg">
@@ -196,15 +196,15 @@
               class="w-full h-[250px] object-cover select-none pointer-events-none" alt="" draggable="false">
           </div>
           <div class="flex-shrink-0 w-[300px] md:w-[400px] rounded-2xl overflow-hidden shadow-lg">
-            <img src="{{ asset('images/homepage/senam_bersama.jpg') }}"
+            <img src="{{ asset('images/homepage/mtc.jpg') }}"
               class="w-full h-[250px] object-cover select-none pointer-events-none" alt="" draggable="false">
           </div>
           <div class="flex-shrink-0 w-[300px] md:w-[400px] rounded-2xl overflow-hidden shadow-lg">
-            <img src="{{ asset('images/homepage/mpls.jpg') }}"
+            <img src="{{ asset('images/homepage/mtc.jpg') }}"
               class="w-full h-[250px] object-cover select-none pointer-events-none" alt="" draggable="false">
           </div>
           <div class="flex-shrink-0 w-[300px] md:w-[400px] rounded-2xl overflow-hidden shadow-lg">
-            <img src="{{ asset('images/homepage/immafest.jpg') }}"
+            <img src="{{ asset('images/homepage/mtc.jpg') }}"
               class="w-full h-[250px] object-cover select-none pointer-events-none" alt="" draggable="false">
           </div>
         </div>
@@ -236,12 +236,11 @@
         {{-- Card 2 --}}
         <div
           class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-[1.03] transition-transform duration-500 ease-in-out">
-          <img src="{{ asset('images/homepage/muspus.jpg') }}" alt="Festival Musikalisasi Puisi"
-            class="w-full h-64 object-cover">
+          <img src="{{ asset('images/homepage/gaia.jpg') }}" alt="Uncover the Stars" class="w-full h-64 object-cover">
           <div class="p-6 text-left">
-            <h3 class="text-lg font-semibold mb-2">Festival Musikalisasi Puisi</h3>
+            <h3 class="text-lg font-semibold mb-2">Uncover the Stars</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              On Festival Musikalisasi Puisi by Balai Bahasa, HIT Band ranked fifth place.
+              On Uncover the Starts Band competition at Gaia City Mall, HIT Band ranked first place.
             </p>
           </div>
         </div>
@@ -249,9 +248,9 @@
         {{-- Card 3 --}}
         <div
           class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-[1.03] transition-transform duration-500 ease-in-out">
-          <img src="{{ asset('images/homepage/smanta.jpg') }}" alt="SMANTA" class="w-full h-64 object-cover">
+          <img src="{{ asset('images/homepage/gaia.jpg') }}" alt="Uncover the Stars" class="w-full h-64 object-cover">
           <div class="p-6 text-left">
-            <h3 class="text-lg font-semibold mb-2">SMANTA</h3>
+            <h3 class="text-lg font-semibold mb-2">Uncover the Stars</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
               On SMAN 3 Pontianak birthday band competition, HIT Band ranked third place.
             </p>

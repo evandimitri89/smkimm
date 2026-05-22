@@ -41,31 +41,5 @@ class TeacherSeeder extends Seeder
             'subject' => 'Administrasi Infrastruktur Jaringan',
             'photo' => 'deddy_sunardi.JPG'
         ]);
-
-        Teacher::create([
-            'name' => 'Dedy Haryanto, M.Pd.',
-            'email' => 'dedy@ski.sch.id',
-            'position' => 'Staff Pengajar',
-            'subject' => 'Dasar-Dasar Akuntansi, Akuntansi Keuangan, Praktik Akuntansi Perusahaan Manufaktur, Akuntansi Lembaga/Instansi Pemerintah',
-            'photo' => 'dedy_haryanto.JPG'
-        ]);
-
-        Teacher::create([
-            'name' => 'Hendra Wijaya, S.T., M.M.',
-            'email' => 'hendra@ski.sch.id',
-
-            'position' => 'Staff Pengajar',
-            'subject' => 'IPAS',
-            'photo' => 'hendra.JPG'
-        ]);
-
-        Teacher::create([
-            'name' => 'Herawati, B.Ed.',
-            'email' => 'herawati@ski.sch.id',
-            'position' => 'Staff Pengajar',
-            'subject' => 'Bahasa Mandarin',
-            'photo' => 'herawati.JPG'
-        ]);
-
     }
 }
