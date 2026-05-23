@@ -15,7 +15,8 @@
         {{-- CARD 1 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover" draggable="false">
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
+              draggable="false">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold">Hari Kemerdekaan</h3>
@@ -26,7 +27,7 @@
         {{-- CARD 2 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -38,7 +39,7 @@
         {{-- CARD 3 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -50,7 +51,7 @@
         {{-- CARD 4 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -62,7 +63,7 @@
         {{-- CARD 5 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -74,7 +75,7 @@
         {{-- CARD 6 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -86,7 +87,7 @@
         {{-- CARD 7 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -98,7 +99,7 @@
         {{-- CARD 8 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">
@@ -110,7 +111,7 @@
         {{-- CARD 9 --}}
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="h-[220px]">
-            <img src="{{ asset('images/activities/kemerdekaan.png') }}" class="w-full h-full object-cover"
+            <img src="{{ asset('images/activities/kemerdekaan.webp') }}" class="w-full h-full object-cover"
               draggable="false">
           </div>
           <div class="p-4">

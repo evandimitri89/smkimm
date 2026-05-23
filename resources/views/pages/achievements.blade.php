@@ -15,36 +15,32 @@
 
         {{-- ACHIEVEMENT 1 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover" draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
         {{-- ACHIEVEMENT 2 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover" draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
         {{-- ACHIEVEMENT 3 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover"
-            draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
         {{-- ACHIEVEMENT 4 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover"
-            draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
         {{-- ACHIEVEMENT 5 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover"
-            draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
         {{-- ACHIEVEMENT 6 --}}
         <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="{{ asset('images/achievements/muspus.jpg') }}" class="w-full h-[260px] object-cover"
-            draggable="false">
+          <img src="{{ asset('images/achievements/gaia.webp') }}" class="w-full h-[260px] object-cover" draggable="false">
         </div>
 
       </div>

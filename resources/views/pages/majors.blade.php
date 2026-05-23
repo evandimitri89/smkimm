@@ -29,7 +29,7 @@
   {{-- SECTION MAJORS (GAMBAR FULL) --}}
   <section class="px-6 md:px-10 py-12">
     <div class="max-w-7xl mx-auto">
-      <img src="{{ asset('images/majors/major.png') }}" alt="Majors" class="w-full h-auto rounded-lg" draggable="false">
+      <img src="{{ asset('images/majors/major.webp') }}" alt="Majors" class="w-full h-auto rounded-lg" draggable="false">
     </div>
   </section>
 
